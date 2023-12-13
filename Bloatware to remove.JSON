@@ -1,0 +1,56 @@
+{
+    "bloatware": [
+        "Microsoft.BingWeather",
+        "Microsoft.GetHelp",
+        "Microsoft.Getstarted",
+        "Microsoft.Office.OneNote",
+        "Microsoft.People",
+        "Microsoft.SkypeApp",
+        "Microsoft.ZuneMusic",
+        "Microsoft.ZuneVideo",
+        "Microsoft.3DBuilder",
+        "Microsoft.AppConnector",
+        "Microsoft.BingFinance",
+        "Microsoft.BingNews",
+        "Microsoft.BingSports",
+        "Microsoft.MicrosoftSolitaireCollection",
+        "Microsoft.XboxApp",
+        "Microsoft.MixedReality.Portal",
+        "Microsoft.YourPhone",
+        "Microsoft.OneConnect",
+        "Microsoft.WindowsAlarms",
+        "Microsoft.WindowsCamera",
+        "Microsoft.WindowsMaps",
+        "Microsoft.MicrosoftOfficeHub",
+        "Microsoft.BingFoodAndDrink",
+        "Microsoft.BingTravel",
+        "Microsoft.BingHealthAndFitness",
+        "Microsoft.WindowsReadingList"
+    ],
+    "services": [
+        "DiagTrack",
+        "dmwappushservice",
+        "WerSvc",
+        "wuauserv"
+    ],
+    "registry_tweaks": {
+        "HKCU\\Control Panel\\Mouse": {
+            "MouseSpeed": "0"
+        },
+        "HKCU\\Control Panel\\Desktop\\WindowMetrics": {
+            "MinAnimate": "0"
+        },
+        "HKLM\\SYSTEM\\CurrentControlSet\\Control\\PriorityControl": {
+            "Win32PrioritySeparation": "26",
+            "type": "REG_DWORD"
+        },
+        "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search": {
+            "AllowCortana": "0",
+            "type": "REG_DWORD"
+        }
+    },
+    "features": [
+        "Set-MpPreference -DisableRealtimeMonitoring $true",
+        "Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All"
+    ]
+}
